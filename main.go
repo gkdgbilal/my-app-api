@@ -125,6 +125,7 @@ type User struct {
 	Username    string             `bson:"username" json:"username"` //json fiber değişkenleri
 	Password    string             `bson:"password" json:"password"`
 	CreatedDate time.Time          `bson:"createdDate" json:"createdDate"`
+	UpdatedDate time.Time          `bson:"updatedDate" json:"updatedDate"`
 }
 
 func Connect() (*mongo.Database, error) {
