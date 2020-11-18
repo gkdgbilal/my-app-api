@@ -126,7 +126,6 @@ type User struct {
 	Password    string             `bson:"password" json:"password"`
 	CreatedDate time.Time          `bson:"createdDate" json:"createdDate"`
 	UpdatedDate time.Time          `bson:"updatedDate" json:"updatedDate"`
-	DeletedDate time.Time          `bson:"deletedDate" json:"deletedDate"`
 }
 
 func Connect() (*mongo.Database, error) {
