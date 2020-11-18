@@ -121,10 +121,10 @@ func createUser(uc *mongo.Collection) fiber.Handler {
 }
 
 type User struct {
-	ID       primitive.ObjectID `bson:"_id" json:"id"`            //bson mongo db değişkenleri
-	Username string             `bson:"username" json:"username"` //json fiber değişkenleri
-	Password string             `bson:"password" json:"password"`
-	//CreatedDate time.Time          `bson:"createdDate" json:"createdDate"`
+	ID          primitive.ObjectID `bson:"_id" json:"id"`            //bson mongo db değişkenleri
+	Username    string             `bson:"username" json:"username"` //json fiber değişkenleri
+	Password    string             `bson:"password" json:"password"`
+	CreatedDate time.Time          `bson:"createdDate" json:"createdDate"`
 }
 
 func Connect() (*mongo.Database, error) {
